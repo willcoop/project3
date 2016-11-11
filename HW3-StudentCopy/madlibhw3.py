@@ -38,11 +38,12 @@ f = open(fname, 'r')
 joint = f.read()'''
 
 tokens = nltk.word_tokenize(joint)
+tagged_tokens = nltk.pos_tag(tokens)
 
 #print("TOKENS")
 #print(tokens)
 
-#tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
+ # gives us a tagged list of tuples
 #print("TAGGED TOKENS")
 #print(tagged_tokens)
 #if debug:
